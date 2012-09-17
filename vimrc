@@ -52,7 +52,8 @@ if has("gui_running")
     set selectmode=mouse,key,cmd
     set keymodel=
 else
-    if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
+"    if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
+    if &term =~ '^\(xterm\|screen\)$'
         set t_Co=256
     endif
     set background=dark		" adapt colors for background
